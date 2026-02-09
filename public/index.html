@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Suggester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Headings">
+    <h1>Pick your mood and get song acc to your mood!</h1>
+    <h3>Moods:</h3>
+  <div class="buttons">
+  <button onclick="getSong('hype')">Hype</button>
+  <button onclick="getSong('sad')">Sad</button>
+  <button onclick="getSong('chill')">Chill</button>
+  </div>
+  <button onclick="getSong(lastMood)">Try Another</button>
+</div>
+<br>
+ <div class="resultCard">
+  <img id="cover" class="songDel" width="200">
+  <h2 id="result" class="songDel"></h2>
+  <h4 id="moodText" class="songDel"></h4>
+  <audio id="preview" controls preload="auto" style="display:none;"  class="songDel"></audio>
+ </div>
+
+</body>
+
+  <script>
+    let lastMood = null;
+    async function getSong(mood) {
+      lastMood = mood;
+      const response = await fetch(`http://localhost:8000/recommend?mood=${mood}`);
+      const data = await response.json();
+
+      if (data.cover) {
+        cover.src = data.cover;
+      }
+
+      if(data.message){
+        document.querySelector("h2").innerText = data.message;
+      }
+      else{
+        document.querySelector("h2").innerText = data.title + " by " + data.artist;
+        document.querySelector("h4").innerText = `Mood selected: ${mood}`;
+      }
+
+      if (data.preview && preview.src !== data.preview) {
+        preview.src = data.preview;
+        preview.style.display = "block";
+      }
+
+    }
+  </script>
+</html>

@@ -1,0 +1,11 @@
+
+
+
+{
+ "resultCount":1,
+ "results": [
+{"wrapperType":"track", "kind":"song", "artistId":1233336608, "collectionId":1804728343, "trackId":1804728349, "artistName":"Seedhe Maut & Karan Kanchan", "collectionName":"Dum Pishaach - Single", "trackName":"Dum Pishaach", "collectionCensoredName":"Dum Pishaach - Single", "trackCensoredName":"Dum Pishaach", "artistViewUrl":"https://music.apple.com/us/artist/seedhe-maut/1233336608?uo=4", "collectionViewUrl":"https://music.apple.com/us/album/dum-pishaach/1804728343?i=1804728349&uo=4", "trackViewUrl":"https://music.apple.com/us/album/dum-pishaach/1804728343?i=1804728349&uo=4", 
+"previewUrl":"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/cd/c5/8fcdc50b-7cb3-bd38-efc2-6a31657b9342/mzaf_18214053655404885766.plus.aac.p.m4a", "artworkUrl30":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/7b/80/7f7b809a-d11c-9ce8-d11b-0d6e065f0afe/199066647707.jpg/30x30bb.jpg", "artworkUrl60":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/7b/80/7f7b809a-d11c-9ce8-d11b-0d6e065f0afe/199066647707.jpg/60x60bb.jpg", "artworkUrl100":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/7b/80/7f7b809a-d11c-9ce8-d11b-0d6e065f0afe/199066647707.jpg/100x100bb.jpg", "collectionPrice":0.99, "trackPrice":0.99, "releaseDate":"2020-09-11T12:00:00Z", "collectionExplicitness":"notExplicit", "trackExplicitness":"notExplicit", "discCount":1, "discNumber":1, "trackCount":1, "trackNumber":1, "trackTimeMillis":128219, "country":"USA", "currency":"USD", "primaryGenreName":"Hip-Hop", "isStreamable":true}]
+}
+
+
